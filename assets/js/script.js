@@ -157,3 +157,21 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+function initMap() {
+  // Pune, Maharashtra, India coordinates
+  var pune = [18.5204, 73.8567];
+
+  // Create a map centered at Pune
+  var map = L.map('map').setView(pune, 13); // Adjust the zoom level as needed
+
+  // Add a tile layer from OpenStreetMap
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+}
+
+// Call the initMap function when the page is loaded
+initMap();

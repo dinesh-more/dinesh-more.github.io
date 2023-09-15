@@ -1879,14 +1879,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
-  .d-color {
-    position: fixed;
-    background: hsla(240, 1%, 17%, 0.75);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--jet);
-    border-radius: 12px 12px 0 0;
-    box-shadow: var(--shadow-2);
-    z-index: 5;
+
+  /* Specify the size of the map container */
+  #map {
+    height: 400px;
+    width: 100%;
   }
+
 
 }
