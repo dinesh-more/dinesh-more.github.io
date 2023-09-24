@@ -182,6 +182,13 @@ article {
   margin: 16px 0;
 }
 
+.d-icon-img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 7px;
+}
+
 .icon-box {
   position: relative;
   background: var(--border-gradient-onyx);
