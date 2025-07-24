@@ -2,52 +2,62 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Personal Portfolio</title>
-  <meta name="description" content="Experienced Java Cloud Developer with hands-on experience in building robust applications using Spring Boot, REST APIs, and Microservices. Proficient in leveraging AWS services to design and deploy scalable and resilient solutions. Skilled in containerization using Docker and orchestration with Kubernetes. Demonstrated expertise in working with diverse databases including PostgreSQL, MySQL, MongoDB, and Elastic Search. Dedicated to continuous learning and professional development, seeking a team that values growth while achieving company objectives. Committed to delivering high-quality solutions and driving innovation in the cloud-native ecosystem.">
+    <title>Personal Portfolio</title>
+    <meta content="Experienced Java Cloud Developer with hands-on experience in building robust applications using Spring Boot, REST APIs, and Microservices. Proficient in leveraging AWS services to design and deploy scalable and resilient solutions. Skilled in containerization using Docker and orchestration with Kubernetes. Demonstrated expertise in working with diverse databases including PostgreSQL, MySQL, MongoDB, and Elastic Search. Dedicated to continuous learning and professional development, seeking a team that values growth while achieving company objectives. Committed to delivering high-quality solutions and driving innovation in the cloud-native ecosystem."
+          name="description">
 
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/developer_software_icon_251042.ico" type="image/x-icon">
+    <!--
+      - favicon
+    -->
+    <link href="./assets/images/developer_software_icon_251042.ico" rel="shortcut icon" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!--
+      - custom css link
+    -->
+    <link href="./assets/css/style.css" rel="stylesheet">
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!--
+      - google font link
+    -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Include Leaflet CSS and JavaScript from a CDN -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-  <style>
-    /* Set the map's height */
-    #map {
-      height: 400px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Include Leaflet CSS and JavaScript from a CDN -->
+    <link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        /* Set the map's height */
+        #map {
+          height: 400px;
+        }
+
+        .experience-small {
+          font-weight: normal;
+          /* color: #888; Optional: softer color */
+          color: var(--vegas-gold);
+          font-weight: var(--fw-400);
+          line-height: 1.6;
+          font-size: 0.55em;
+        }
+    </style>
 
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
+<!--
+  - #MAIN
+-->
 
-  <main>
+<main>
 
     <!--
       - #SIDEBAR
@@ -55,108 +65,105 @@
 
     <aside class="sidebar" data-sidebar>
 
-      <div class="sidebar-info">
+        <div class="sidebar-info">
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Dinesh More" width="80">
-        </figure>
+            <figure class="avatar-box">
+                <img alt="Dinesh More" src="./assets/images/my-avatar.png" width="80">
+            </figure>
 
-        <div class="info-content">
-          <h1 class="name" title="Dinesh More">Dinesh More</h1>
+            <div class="info-content">
+                <h1 class="name" title="Dinesh More">Dinesh More</h1>
 
-          <p class="title">Cloud Developer</p>
+                <p class="title">Cloud Developer</p>
+            </div>
+
+            <button class="info_more-btn" data-sidebar-btn>
+                <span>Show Contacts</span>
+
+                <ion-icon name="chevron-down"></ion-icon>
+            </button>
+
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+            <div class="separator"></div>
 
-      </div>
+            <ul class="contacts-list">
 
-      <div class="sidebar-info_more">
+                <li class="contact-item">
 
-        <div class="separator"></div>
+                    <div class="icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
 
-        <ul class="contacts-list">
+                    <div class="contact-info">
+                        <p class="contact-title">Email</p>
 
-          <li class="contact-item">
+                        <a class="contact-link" href="mailto:dineshmore2298@gmail.com">dineshmore2298@gmail.com</a>
+                    </div>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+                </li>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+                <li class="contact-item">
 
-              <a href="mailto:dineshmore2298@gmail.com" class="contact-link">dineshmore2298@gmail.com</a>
-            </div>
+                    <div class="icon-box">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </div>
 
-          </li>
+                    <div class="contact-info">
+                        <p class="contact-title">Phone</p>
 
-          <li class="contact-item">
+                        <a class="contact-link" href="tel:+12133522795">+91 8805512261</a>
+                    </div>
 
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
+                </li>
 
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
+                <li class="contact-item">
 
-              <a href="tel:+12133522795" class="contact-link">+91 8805512261</a>
-            </div>
+                    <div class="icon-box">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </div>
 
-          </li>
+                    <div class="contact-info">
+                        <p class="contact-title">Birthday</p>
 
-          <li class="contact-item">
+                        <time datetime="1982-06-23">Feb 02, 1998</time>
+                    </div>
 
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
+                </li>
 
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+                <li class="contact-item">
 
-              <time datetime="1982-06-23">Feb 02, 1998</time>
-            </div>
+                    <div class="icon-box">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
 
-          </li>
+                    <div class="contact-info">
+                        <p class="contact-title">Location</p>
 
-          <li class="contact-item">
+                        <address>Pune, India</address>
+                    </div>
 
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
+                </li>
 
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
+            </ul>
 
-              <address>Pune, India</address>
-            </div>
+            <div class="separator"></div>
 
-          </li>
+            <ul class="social-list">
 
-        </ul>
+                <li class="social-item">
+                    <a class="social-link" href="https://www.linkedin.com/in/dineshmore2/" target="_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
 
-        <div class="separator"></div>
+            </ul>
 
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/dineshmore2/" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
+        </div>
 
     </aside>
-
-
-
 
 
     <!--
@@ -165,1611 +172,1412 @@
 
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Certificates</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Location</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Experienced Java Cloud Developer with over 4 years of hands-on experience in building robust applications
-            using Spring Boot, REST APIs, and Microservices. Proficient in leveraging AWS services to design and deploy
-            scalable and resilient solutions. Skilled in containerization using Docker and orchestration with
-            Kubernetes. Demonstrated expertise in working with diverse databases including PostgreSQL, MySQL, MongoDB,
-            and Elastic Search. Dedicated to continuous learning and professional development, seeking a team that
-            values growth while achieving company objectives. Committed to delivering high-quality solutions and driving
-            innovation in the cloud-native ecosystem.
-          </p>
-        </section>
-
-
         <!--
-          - service
+          - #NAVBAR
         -->
 
-        <section class="service">
+        <nav class="navbar">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+            <ul class="navbar-list">
 
-          <ul class="service-list">
+                <li class="navbar-item">
+                    <button class="navbar-link  active" data-nav-link>About</button>
+                </li>
 
-            <li class="service-item">
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Resume</button>
+                </li>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icons-api2.png" alt="design icon" width="40">
-              </div>
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Certificates</button>
+                </li>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">REST APIs</h4>
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Portfolio</button>
+                </li>
 
-                <p class="service-item-text">
-                  Proficient in designing and implementing RESTful APIs using Java 8 and Spring Boot. Skilled in
-                  creating scalable and efficient web services that adhere to REST principles for seamless communication
-                  between client and server applications.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icons-microservice.png" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Microservices</h4>
-
-                <p class="service-item-text">
-                  Experienced in building microservices architecture, both with Spring Cloud for on-premises
-                  environments and Kubernetes for cloud-native deployments. Expertise includes designing, developing,
-                  and managing independent, loosely-coupled microservices to enhance system modularity and flexibility.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icons-cloud.png" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Serverless Framework</h4>
-
-                <p class="service-item-text">
-                  Well-versed in utilizing AWS services to develop serverless applications and functions. Proficiency in
-                  designing and deploying serverless solutions that automatically scale, reducing operational overhead
-                  and optimizing cost-effectiveness.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icons-application-development.png" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Software development</h4>
-
-                <p class="service-item-text">
-                  Hands-on experience in the end-to-end software development lifecycle. Skilled in creating web
-                  applications, encompassing everything from requirements analysis and design to implementation and
-                  testing. Proficient in delivering high-quality software solutions that meet business needs.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Working Domain</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/icons8-banking-100.png" alt="Daniel lewis" width="60"
-                    data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Banking</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Adept in the banking sector, with a comprehensive understanding of financial transactions, customer
-                    accounts, and regulatory compliance. Proficient in developing and maintaining banking software
-                    solutions that facilitate core banking operations such as deposits, withdrawals, fund transfers, and
-                    loan management.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/icons8-finance-services-100.png" alt="Emily evans" width="60"
-                    data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Financial Services</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Experienced in the realm of financial services, encompassing a wide range of activities such as
-                    wealth management, investment advisory, and asset allocation. Skilled in building software tools and
-                    platforms that support financial planning, portfolio management, and trading activities to help
-                    clients achieve their financial goals.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/icons8-insurance-64(5).png" alt="Jessica miller" width="60"
-                    data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Insurance</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Well-versed in the insurance industry, with expertise in policy management, claims processing, and
-                    risk assessment. Proficient in developing software solutions tailored to the insurance sector,
-                    streamlining policy issuance, underwriting, and claims settlement processes to enhance operational
-                    efficiency and customer satisfaction.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">Client Location</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Tech Stack</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_icons-java.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_maven-svgrepo-com.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_amazon_aws_logo_icon.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_icons8-spring-boot-96.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_gradle-svgrepo-com.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_node-js-svgrepo-com.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_docker-svgrepo-com.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_angular_logo_icon_169598.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_icons8-postgres-96.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_icons8-mongodb-96.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_icons8-mysql-96.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_jenkins_logo_icon_167854.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_apache_kafka_logo_icon_167866.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_rabbitmq_logo_icon_170812.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_icons8-redis-96.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_icons8-elasticsearch-96.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_icons8-grafana-96.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_icons8-intellij-idea-96.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_icons8-postman-is-the-only-complete-api-development-environment-96.png"
-                  alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sqr_tomcat_original_wordmark_logo_icon_146324.jpg" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <img class="d-icon-img" src="assets/images/icons8-education-48.png">
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">BACHELOR OF ENGINEERING, R C PATEL INSTITUTE OF TECHNOLOGY</h4>
-
-              <span>2016 — 2019</span>
-
-              <p class="timeline-text">
-                CGPA: 6.57
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">DIPLOMA, SSVPS’S BSD POLYTECHNIC</h4>
-
-              <span>2013 — 2016</span>
-
-              <p class="timeline-text">
-                PERCENTAGE: 69.63%
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <img class="d-icon-img" src="assets/images/icons8-experience-24.png">
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">SENIOR SOFTWARE DEVELOPER, HSBC</h4>
-
-              <span>JAN 2024 — Present</span>
-
-              <p class="timeline-text">• PAAS</p>
-              <p class="timeline-text">• Platform Engineering</p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">SOFTWARE DEVELOPER, APPLIED CLOUD COMPUTING</h4>
-
-              <span>JAN 2022 — DEC 2023</span>
-
-              <p class="timeline-text">• Developed and deployed Microservices on Kubernetes, handling bank and insurance
-                domain projects.</p>
-              <p class="timeline-text">• Expertise in Core Java, designing and coding business logics using OOP best
-                practices.</p>
-              <p class="timeline-text">• Utilized Spring Boot and Microservices architecture for building scalable and
-                efficient applications.</p>
-              <p class="timeline-text">• Worked with various AWS services, such as Lambda functions, SES, SNS, Route53,
-                Network Load Balancer, Application Load Balancer, CloudWatch, DynamoDB, API Gateway, AWS Fargate, AWS
-                EKS, IAM, EC2, and S3.</p>
-              <p class="timeline-text">• Implemented Cost Control Strategies to optimize AWS resource usage.</p>
-              <p class="timeline-text">• Integrated Azure Blob storage for efficient data handling.</p>
-              <p class="timeline-text">• Utilized Aspect-Oriented Programming (AOP) for cross-cutting concerns in
-                application development.</p>
-              <p class="timeline-text">• Implemented version control and source code management using GitHub and JIRA.
-              </p>
-              <p class="timeline-text">• Performed testing in different environments like DEV and QA, to identify and
-                address any issues before they reach the production stage.</p>
-              <p class="timeline-text">• Deployed projects using Jenkins jobs on AWS cloud.</p>
-              <p class="timeline-text">• Collaborated with the team to develop optimized high-quality deliverables.</p>
-              <p class="timeline-text">• Proactively understood requirements and participated efficiently in the
-                development process.</p>
-              <p class="timeline-text">• Implemented robust version control practices using tools like GitHub, ensuring
-                that the correct codebase is deployed for each release and enabling efficient rollbacks if necessary.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">ASSISTANT SYSTEM ENGINEER, TATA CONSULTANCY SERVICES</h4>
-
-              <span>APRIL 2020 – DEC 2021</span>
-
-              <p class="timeline-text">• Utilize Salesforce Dashboard (CRM) platform to manage and track customer
-                support ticket activities.</p>
-              <p class="timeline-text">• Responsible for managing support tickets related to the Tealeaf product. This
-                involves receiving, categorizing, and prioritizing tickets based on their severity and impact.</p>
-              <p class="timeline-text">• Work closely with US teammates and collaborate effectively to ensure timely
-                resolution of customer issues.</p>
-              <p class="timeline-text">• Interact with customers, both internal and external, to provide updates on
-                support ticket progress, gather additional information if needed, and ensure customer satisfaction.</p>
-              <p class="timeline-text">• Effective communication skills are crucial in managing customer expectations,
-                resolving issues, and maintaining a positive relationship with clients.</p>
-
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">JAVA DEVELOPER, TRUSTCODE SOFTWARE SOLUTIONS</h4>
-
-              <span>JAN 2020 – APRIL 2021</span>
-
-              <p class="timeline-text">• Developed full-stack web applications which processed, analyzed, and rendered
-                data visually.</p>
-              <p class="timeline-text">• Developed new applications and added functionality to existing applications
-                using Java/J2EE technologies.</p>
-              <p class="timeline-text">• Created RESTful APIs for increased scalability of the application.</p>
-              <p class="timeline-text">• Reviewed code and debugged errors to improve performance.</p>
-              <p class="timeline-text">• Utilized frameworks such as JPA and Spring for persistence and application
-                layers.</p>
-              <p class="timeline-text">• Designed the front-end of web applications using HTML, CSS, Bootstrap, and
-                Angular.</p>
-              <p class="timeline-text">• Utilized object-oriented programming and Java for creating business logic.</p>
-
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">LINUX ADMIN, CLOVER INFOTECH</h4>
-
-              <span>AUG 2019 – DEC 2019</span>
-
-              <p class="timeline-text">• Experience in installation, configuration, and file system management through
-                Logical Volume Manager (LVM).</p>
-              <p class="timeline-text">• Involved in upgrading production Linux RedHat.</p>
-              <p class="timeline-text">• Creating new file systems, mounting file systems, and unmounting file systems.
-              </p>
-              <p class="timeline-text">• Performed backup and restore.</p>
-
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <!-- <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Java</h5>
-                <data value="80">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Spring Boot</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Docker</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">AWS / Azure</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Jenkins</h5>
-                <data value="80">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Jira</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Git</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">JPA</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Kafka</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">CICD</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">RabbitMQ</h5>
-                <data value="80">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Apache JMeter</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Spring Cloud</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">IntelliJ</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Postman</h5>
-                <data value="80">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Maven</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Spring Security</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Kubernetes</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">REST API</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Microservices</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul> -->
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/icons-java.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Java</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Java Info
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/icons8-amazon-aws-64.png" alt="Emily evans" width="60"
-                    data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>AWS Cloud</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    AWS Cloud Info
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/sp2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Spring Framework</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Spring Framework Info
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/icons8-kubernetes-96.png" alt="Henry william" width="60"
-                    data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Kubernetes</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Kubernetes Info
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-      <article class="resume" data-page="certificates">
-
-        <header>
-          <h2 class="h2 article-title">Certificates</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <img class="d-icon-img" src="assets/images/icons8-certificate-50.png">
-            </div>
-
-            <h3 class="h3">HackerRank</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                <a href="https://www.hackerrank.com/certificates/574506d34d19" style="text-decoration: none; color: inherit;" target="_blank">
-                  Java
-                </a>
-              </h4>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                <a href="https://www.hackerrank.com/certificates/f6574b40f3e4" style="text-decoration: none; color: inherit;" target="_blank">
-                  Angular
-                </a>
-              </h4>
-            </li>
-
-          </ol>
-
-          <br>
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <img class="d-icon-img" src="assets/images/icons8-certificate-50.png">
-            </div>
-
-            <h3 class="h3">TCS</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Web Technologies: Java Restful Web Services_Foundation</h4>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Web Technologies: RESTful Webservice Intermediate</h4>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Foundation: Java Persistence API Foundation</h4>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Process: Agile Way of Working Foundation</h4>
-            </li>
-
-          </ol>
-
-          <br>
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <img class="d-icon-img" src="assets/images/icons8-certificate-50.png">
-            </div>
-
-            <h3 class="h3">Udemy</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                <a href="https://www.udemy.com/certificate/UC-f3c4f375-2115-403e-b644-35285a5f1552/" style="text-decoration: none; color: inherit;" target="_blank">
-                   Build Reactive MicroServices using Spring WebFlux/SpringBoot
-                </a>
-              </h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                <a href="https://www.udemy.com/certificate/UC-4d9d1a8f-de61-481d-aa7f-b6c53281768e/" style="text-decoration: none; color: inherit;" target="_blank">
-                  Deploy Spring Boot Microservices on AWS ECS with Fargate
-                </a>
-              </h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                <a href="https://www.udemy.com/certificate/UC-9ee256c0-206f-4ced-ab0c-6226807dedf4/" style="text-decoration: none; color: inherit;" target="_blank">
-                  AWS Serverless REST APIs for Java Developers. CI/CD included
-                </a>
-              </h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Introduction to Cloud Computing on AWS</h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Learn AWS Cloud from the Scratch</h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">The Ultimate Amazon Web Services Bootcamp</h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Spring Core - Learn Spring Framework 4 and Spring Boot</h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Amazon DynamoDB for Beginners: The Complete Bootcamp</h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                <a href="https://www.udemy.com/certificate/UC-5553baa8-f272-48b1-9741-625be6be0b67/" style="text-decoration: none; color: inherit;" target="_blank">
-                  Serverless Framework Bootcamp: Node.js, AWS & Microservices
-                </a>
-              </h4>
-
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Java Network Programming - Mastering TCP/IP : CJNP+ 2023 JVA</h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Java Full Stack with Spring Boot and Angular</h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Free Code Camp Full Stack Development Certification</h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Full Stack Angular and Java Spring Boot</h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                <a href="https://www.udemy.com/certificate/UC-98559267-f2ec-44c1-afbe-b908aff9d32b/" style="text-decoration: none; color: inherit;" target="_blank">
-                  Learn to Build Interactive Modern Web Apps with Angular 17
-                </a>
-              </h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                <a href="#" style="text-decoration: none; color: inherit;" target="_blank">
-                  Develop a reactive Java microservice with ReactiveJ
-                </a>
-              </h4>
-            </li>
-          </ol>
-
-          <br>
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <img class="d-icon-img" src="assets/images/icons8-certificate-50.png">
-            </div>
-
-            <h3 class="h3">LinkedIn Learning</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                <a href="https://github.com/dinesh-more/storage/blob/develop/certificate/CertificateOfCompletion_Docker%20Foundations%20Professional%20Certificate.pdf" style="text-decoration: none; color: inherit;" target="_blank">
-                  Career Essentials in GitHub Professional Certificate
-                </a>
-              </h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                <a href="https://github.com/dinesh-more/storage/blob/develop/certificate/CertificateOfCompletion_Docker%20Foundations%20Professional%20Certificate.pdf" style="text-decoration: none; color: inherit;" target="_blank">
-                  Docker Foundations Professional Certificate
-                </a>
-              </h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Microservices Foundations</h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Microservices: Design Patterns</h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Java EE: RESTful Service with JAX-RS 2.0</h4>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Designing RESTful APIs</h4>
-            </li>
-
-          </ol>
-
-        </section>
-
-      </article>
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Serverless</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Serverless</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Location</button>
+                </li>
 
             </ul>
 
-          </div>
+        </nav>
+
 
-          <ul class="project-list">
+        <!--
+          - #ABOUT
+        -->
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+        <article class="about  active" data-page="about">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+            <header>
+                <h2 class="h2 article-title">About me</h2>
+            </header>
 
-                  <img src="./assets/images/insurance-policy.jpg" alt="finance" loading="lazy">
-                </figure>
+            <section class="about-text">
+                <p>
+                    Experienced Java Cloud Developer with over 4 years of hands-on experience in building robust
+                    applications
+                    using Spring Boot, REST APIs, and Microservices. Proficient in leveraging AWS services to design and
+                    deploy
+                    scalable and resilient solutions. Skilled in containerization using Docker and orchestration with
+                    Kubernetes. Demonstrated expertise in working with diverse databases including PostgreSQL, MySQL,
+                    MongoDB,
+                    and Elastic Search. Dedicated to continuous learning and professional development, seeking a team
+                    that
+                    values growth while achieving company objectives. Committed to delivering high-quality solutions and
+                    driving
+                    innovation in the cloud-native ecosystem.
+                </p>
+            </section>
 
-                <h3 class="project-title">Insurence Product</h3>
 
-                <p class="project-category">Web development</p>
+            <!--
+              - service
+            -->
 
-              </a>
-            </li>
+            <section class="service">
 
-            <li class="project-item  active" data-filter-item data-category="serverless">
-              <a href="https://github.com/dinesh-more/aws-api-gateway-lambda-authorizer" target="_blank">
+                <h3 class="h3 service-title">What i'm doing</h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                      <img class="d-icon-img" src="assets/images/icons8-eye-24.png">
-                  </div>
+                <ul class="service-list">
 
-                  <img src="./assets/images/lambda-authorizer.png" alt="fundo" loading="lazy">
-                </figure>
+                    <li class="service-item">
 
-                <h3 class="project-title">Lambda Authorizer</h3>
+                        <div class="service-icon-box">
+                            <img alt="design icon" src="./assets/images/icons-api2.png" width="40">
+                        </div>
 
-                <p class="project-category">Serverless</p>
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">REST APIs</h4>
 
-              </a>
-            </li>
+                            <p class="service-item-text">
+                                Proficient in designing and implementing RESTful APIs using Java 8 and Spring Boot.
+                                Skilled in
+                                creating scalable and efficient web services that adhere to REST principles for seamless
+                                communication
+                                between client and server applications.
+                            </p>
+                        </div>
 
-            <li class="project-item  active" data-filter-item data-category="serverless">
-              <a href="#">
+                    </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <li class="service-item">
 
-                  <img src="./assets/images/shortURL.png" alt="fundo" loading="lazy">
-                </figure>
+                        <div class="service-icon-box">
+                            <img alt="Web development icon" src="./assets/images/icons-microservice.png" width="40">
+                        </div>
 
-                <h3 class="project-title">ShortURL Redirection</h3>
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Microservices</h4>
 
-                <p class="project-category">Serverless</p>
+                            <p class="service-item-text">
+                                Experienced in building microservices architecture, both with Spring Cloud for
+                                on-premises
+                                environments and Kubernetes for cloud-native deployments. Expertise includes designing,
+                                developing,
+                                and managing independent, loosely-coupled microservices to enhance system modularity and
+                                flexibility.
+                            </p>
+                        </div>
 
-              </a>
-            </li>
+                    </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+                    <li class="service-item">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                        <div class="service-icon-box">
+                            <img alt="mobile app icon" src="./assets/images/icons-cloud.png" width="40">
+                        </div>
 
-                  <img src="./assets/images/bitly-springboot-replica.png" alt="brawlhalla" loading="lazy">
-                </figure>
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Serverless Framework</h4>
 
-                <h3 class="project-title">Bitly Replica</h3>
+                            <p class="service-item-text">
+                                Well-versed in utilizing AWS services to develop serverless applications and functions.
+                                Proficiency in
+                                designing and deploying serverless solutions that automatically scale, reducing
+                                operational overhead
+                                and optimizing cost-effectiveness.
+                            </p>
+                        </div>
 
-                <p class="project-category">Applications</p>
+                    </li>
 
-              </a>
-            </li>
+                    <li class="service-item">
 
-            <li class="project-item  active" data-filter-item data-category="serverless">
-              <a href="#">
+                        <div class="service-icon-box">
+                            <img alt="camera icon" src="./assets/images/icons-application-development.png" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Software development</h4>
+
+                            <p class="service-item-text">
+                                Hands-on experience in the end-to-end software development lifecycle. Skilled in
+                                creating web
+                                applications, encompassing everything from requirements analysis and design to
+                                implementation and
+                                testing. Proficient in delivering high-quality software solutions that meet business
+                                needs.
+                            </p>
+                        </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    </li>
 
-                  <img src="./assets/images/apigw-http-sqs-lambda-sls.png" alt="dsm." loading="lazy">
-                </figure>
+                </ul>
 
-                <h3 class="project-title">AWS SQS Mechanism</h3>
+            </section>
 
-                <p class="project-category">Serverless</p>
 
-              </a>
-            </li>
+            <!--
+              - testimonials
+            -->
 
-            <li class="project-item  active" data-filter-item data-category="serverless">
-              <a href="#">
+            <section class="testimonials">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <h3 class="h3 testimonials-title">Working Domain</h3>
 
-                  <img src="./assets/images/lambda-ses.png" alt="metaspark" loading="lazy">
-                </figure>
+                <ul class="testimonials-list has-scrollbar">
 
-                <h3 class="project-title">Bulk Email Sender</h3>
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
 
-                <p class="project-category">Serverless</p>
+                            <figure class="testimonials-avatar-box">
+                                <img alt="Daniel lewis" data-testimonials-avatar src="./assets/images/icons8-banking-100.png"
+                                     width="60">
+                            </figure>
 
-              </a>
-            </li>
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Banking</h4>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    Adept in the banking sector, with a comprehensive understanding of financial
+                                    transactions, customer
+                                    accounts, and regulatory compliance. Proficient in developing and maintaining
+                                    banking software
+                                    solutions that facilitate core banking operations such as deposits, withdrawals,
+                                    fund transfers, and
+                                    loan management.
+                                </p>
+                            </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                        </div>
+                    </li>
 
-                  <img src="./assets/images/call-vault.png" alt="task manager" loading="lazy">
-                </figure>
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
 
-                <h3 class="project-title">CallRecord Manager</h3>
+                            <figure class="testimonials-avatar-box">
+                                <img alt="Emily evans" data-testimonials-avatar src="./assets/images/icons8-finance-services-100.png"
+                                     width="60">
+                            </figure>
 
-                <p class="project-category">Applications</p>
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Financial Services</h4>
 
-              </a>
-            </li>
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    Experienced in the realm of financial services, encompassing a wide range of
+                                    activities such as
+                                    wealth management, investment advisory, and asset allocation. Skilled in building
+                                    software tools and
+                                    platforms that support financial planning, portfolio management, and trading
+                                    activities to help
+                                    clients achieve their financial goals.
+                                </p>
+                            </div>
 
-          </ul>
+                        </div>
+                    </li>
 
-        </section>
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
 
-      </article>
+                            <figure class="testimonials-avatar-box">
+                                <img alt="Jessica miller" data-testimonials-avatar src="./assets/images/icons8-insurance-64(5).png"
+                                     width="60">
+                            </figure>
 
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Insurance</h4>
 
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    Well-versed in the insurance industry, with expertise in policy management, claims
+                                    processing, and
+                                    risk assessment. Proficient in developing software solutions tailored to the
+                                    insurance sector,
+                                    streamlining policy issuance, underwriting, and claims settlement processes to
+                                    enhance operational
+                                    efficiency and customer satisfaction.
+                                </p>
+                            </div>
 
+                        </div>
+                    </li>
 
+                </ul>
 
-      <!--
-        - #BLOG
-      -->
+            </section>
 
-      <article class="blog" data-page="blog">
 
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
+            <!--
+              - testimonials modal
+            -->
 
-        <section class="blog-posts">
+            <div class="modal-container" data-modal-container>
 
-          <ul class="blog-posts-list">
+                <div class="overlay" data-overlay></div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                <section class="testimonials-modal">
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
+                    <button class="modal-close-btn" data-modal-close-btn>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
 
-                <div class="blog-content">
+                    <div class="modal-img-wrapper">
+                        <figure class="modal-avatar-box">
+                            <img alt="Daniel lewis" data-modal-img src="./assets/images/avatar-1.png" width="80">
+                        </figure>
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                        <img alt="quote icon" src="./assets/images/icon-quote.svg">
+                    </div>
 
-                    <span class="dot"></span>
+                    <div class="modal-content">
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
+                        <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                        <time datetime="2021-06-14">Client Location</time>
 
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
+                        <div data-modal-text>
+                            <p>
+                                Richard was hired to create a corporate identity. We were very pleased with the work
+                                done. She has a
+                                lot of experience
+                                and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous
+                                cididt
+                                consectetur adipiscing
+                                elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                            </p>
+                        </div>
 
-                </div>
+                    </div>
 
-              </a>
-            </li>
+                </section>
 
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="location">
-
-        <header>
-          <h2 class="h2 article-title">Location</h2>
-        </header>
-
-        <!-- <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1512094.503662009!2d73.71747457119665!3d18.52043031556061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf632c9c8cc7%3A0x1f3826b3c94c06d!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1631756005866!5m2!1sen!2sin"
-            width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section> -->
-
-        <section class="mapbox" data-mapbox>
-          <!-- <figure>
-              <div id="map" style="width: 100%; height: 400px;"></div>
-          </figure>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script> -->
-          <div id="map"></div>
-
-          <script>
-            // Initialize the map
-            var map = L.map('map').setView([18.59267, 73.73887], 13); // Coordinates for Hinjewadi, Pune
-
-            // Add a tile layer (you can choose different providers)
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
-
-            // Add a marker for the location
-            var marker = L.marker([18.59267, 73.73887]).addTo(map);
-
-            // Add a popup to the marker
-            marker.bindPopup("<b>Hinjewadi</b>, Pune, Maharashtra, India").openPopup();
-          </script>
-        </section>
-
-
-        <!-- <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+            <!--
+              - clients
+            -->
 
-          </form>
+            <section class="clients">
 
-        </section> -->
+                <h3 class="h3 clients-title">Tech Stack</h3>
 
-      </article>
+                <ul class="clients-list has-scrollbar">
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons-java.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_maven-svgrepo-com.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_amazon_aws_logo_icon.jpg">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons8-spring-boot-96.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_gradle-svgrepo-com.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_node-js-svgrepo-com.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_docker-svgrepo-com.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_angular_logo_icon_169598.jpg">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons8-postgres-96.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons8-mongodb-96.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons8-mysql-96.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_jenkins_logo_icon_167854.jpg">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_apache_kafka_logo_icon_167866.jpg">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_rabbitmq_logo_icon_170812.jpg">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons8-redis-96.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons8-elasticsearch-96.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons8-grafana-96.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo" src="./assets/images/sqr_icons8-intellij-idea-96.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo"
+                                 src="./assets/images/sqr_icons8-postman-is-the-only-complete-api-development-environment-96.png">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="#">
+                            <img alt="client logo"
+                                 src="./assets/images/sqr_tomcat_original_wordmark_logo_icon_146324.jpg">
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
+
+
+        <!--
+          - #RESUME
+        -->
+
+        <article class="resume" data-page="resume">
+
+            <header>
+                <h2 class="h2 article-title">Resume</h2>
+            </header>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <img class="d-icon-img" src="assets/images/icons8-education-48.png">
+                    </div>
+
+                    <h3 class="h3">Education</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">BACHELOR OF ENGINEERING, R C PATEL INSTITUTE OF
+                            TECHNOLOGY</h4>
+
+                        <span>2016 — 2019</span>
+
+                        <p class="timeline-text">
+                            CGPA: 6.57
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">DIPLOMA, SSVPS’S BSD POLYTECHNIC</h4>
+
+                        <span>2013 — 2016</span>
+
+                        <p class="timeline-text">
+                            PERCENTAGE: 69.63%
+                        </p>
+
+                    </li>
+
+                </ol>
+
+            </section>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <img class="d-icon-img" src="assets/images/icons8-experience-24.png">
+                    </div>
+
+                    <!-- <h3 class="h3">Experience - <small id="experience-duration"></small></h3> -->
+                    <h3 class="h3">Experience <span class="experience-small" id="experience-duration"></span></h3>
+
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">SENIOR SOFTWARE DEVELOPER, HSBC</h4>
+
+                        <span>JAN 2024 — Present</span>
+
+                        <p class="timeline-text">• PAAS</p>
+                        <p class="timeline-text">• Platform Engineering</p>
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">SOFTWARE DEVELOPER, APPLIED CLOUD COMPUTING</h4>
+
+                        <span>JAN 2022 — DEC 2023</span>
+
+                        <p class="timeline-text">• Developed and deployed Microservices on Kubernetes, handling bank and
+                            insurance
+                            domain projects.</p>
+                        <p class="timeline-text">• Expertise in Core Java, designing and coding business logics using
+                            OOP best
+                            practices.</p>
+                        <p class="timeline-text">• Utilized Spring Boot and Microservices architecture for building
+                            scalable and
+                            efficient applications.</p>
+                        <p class="timeline-text">• Worked with various AWS services, such as Lambda functions, SES, SNS,
+                            Route53,
+                            Network Load Balancer, Application Load Balancer, CloudWatch, DynamoDB, API Gateway, AWS
+                            Fargate, AWS
+                            EKS, IAM, EC2, and S3.</p>
+                        <p class="timeline-text">• Implemented Cost Control Strategies to optimize AWS resource
+                            usage.</p>
+                        <p class="timeline-text">• Integrated Azure Blob storage for efficient data handling.</p>
+                        <p class="timeline-text">• Utilized Aspect-Oriented Programming (AOP) for cross-cutting concerns
+                            in
+                            application development.</p>
+                        <p class="timeline-text">• Implemented version control and source code management using GitHub
+                            and JIRA.
+                        </p>
+                        <p class="timeline-text">• Performed testing in different environments like DEV and QA, to
+                            identify and
+                            address any issues before they reach the production stage.</p>
+                        <p class="timeline-text">• Deployed projects using Jenkins jobs on AWS cloud.</p>
+                        <p class="timeline-text">• Collaborated with the team to develop optimized high-quality
+                            deliverables.</p>
+                        <p class="timeline-text">• Proactively understood requirements and participated efficiently in
+                            the
+                            development process.</p>
+                        <p class="timeline-text">• Implemented robust version control practices using tools like GitHub,
+                            ensuring
+                            that the correct codebase is deployed for each release and enabling efficient rollbacks if
+                            necessary.
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">ASSISTANT SYSTEM ENGINEER, TATA CONSULTANCY SERVICES</h4>
+
+                        <span>APRIL 2020 – DEC 2021</span>
+
+                        <p class="timeline-text">• Utilize Salesforce Dashboard (CRM) platform to manage and track
+                            customer
+                            support ticket activities.</p>
+                        <p class="timeline-text">• Responsible for managing support tickets related to the Tealeaf
+                            product. This
+                            involves receiving, categorizing, and prioritizing tickets based on their severity and
+                            impact.</p>
+                        <p class="timeline-text">• Work closely with US teammates and collaborate effectively to ensure
+                            timely
+                            resolution of customer issues.</p>
+                        <p class="timeline-text">• Interact with customers, both internal and external, to provide
+                            updates on
+                            support ticket progress, gather additional information if needed, and ensure customer
+                            satisfaction.</p>
+                        <p class="timeline-text">• Effective communication skills are crucial in managing customer
+                            expectations,
+                            resolving issues, and maintaining a positive relationship with clients.</p>
+
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">JAVA DEVELOPER, TRUSTCODE SOFTWARE SOLUTIONS</h4>
+
+                        <span>JAN 2020 – APRIL 2021</span>
+
+                        <p class="timeline-text">• Developed full-stack web applications which processed, analyzed, and
+                            rendered
+                            data visually.</p>
+                        <p class="timeline-text">• Developed new applications and added functionality to existing
+                            applications
+                            using Java/J2EE technologies.</p>
+                        <p class="timeline-text">• Created RESTful APIs for increased scalability of the
+                            application.</p>
+                        <p class="timeline-text">• Reviewed code and debugged errors to improve performance.</p>
+                        <p class="timeline-text">• Utilized frameworks such as JPA and Spring for persistence and
+                            application
+                            layers.</p>
+                        <p class="timeline-text">• Designed the front-end of web applications using HTML, CSS,
+                            Bootstrap, and
+                            Angular.</p>
+                        <p class="timeline-text">• Utilized object-oriented programming and Java for creating business
+                            logic.</p>
+
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">LINUX ADMIN, CLOVER INFOTECH</h4>
+
+                        <span>AUG 2019 – DEC 2019</span>
+
+                        <p class="timeline-text">• Experience in installation, configuration, and file system management
+                            through
+                            Logical Volume Manager (LVM).</p>
+                        <p class="timeline-text">• Involved in upgrading production Linux RedHat.</p>
+                        <p class="timeline-text">• Creating new file systems, mounting file systems, and unmounting file
+                            systems.
+                        </p>
+                        <p class="timeline-text">• Performed backup and restore.</p>
+
+
+                    </li>
+
+                </ol>
+
+            </section>
+
+            <section class="skill">
+
+                <h3 class="h3 skills-title">My skills</h3>
+
+                <ul class="testimonials-list has-scrollbar">
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img alt="Daniel lewis" data-testimonials-avatar src="./assets/images/icons-java.png"
+                                     width="60">
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Java</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    Java Info
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img alt="Emily evans" data-testimonials-avatar src="./assets/images/icons8-amazon-aws-64.png"
+                                     width="60">
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>AWS Cloud</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    AWS Cloud Info
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img alt="Jessica miller" data-testimonials-avatar src="./assets/images/sp2.png"
+                                     width="60">
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Spring Framework</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    Spring Framework Info
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img alt="Henry william" data-testimonials-avatar src="./assets/images/icons8-kubernetes-96.png"
+                                     width="60">
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Kubernetes</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    Kubernetes Info
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
+
+
+        <article class="resume" data-page="certificates">
+
+            <header>
+                <h2 class="h2 article-title">Certificates</h2>
+            </header>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <img class="d-icon-img" src="assets/images/icons8-certificate-50.png">
+                    </div>
+
+                    <h3 class="h3">HackerRank</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">
+                            <a href="https://www.hackerrank.com/certificates/574506d34d19"
+                               style="text-decoration: none; color: inherit;" target="_blank">
+                                Java
+                            </a>
+                        </h4>
+                    </li>
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">
+                            <a href="https://www.hackerrank.com/certificates/f6574b40f3e4"
+                               style="text-decoration: none; color: inherit;" target="_blank">
+                                Angular
+                            </a>
+                        </h4>
+                    </li>
+
+                </ol>
+
+                <br>
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <img class="d-icon-img" src="assets/images/icons8-certificate-50.png">
+                    </div>
+
+                    <h3 class="h3">TCS</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Web Technologies: Java Restful Web Services_Foundation</h4>
+                    </li>
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Web Technologies: RESTful Webservice Intermediate</h4>
+                    </li>
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Foundation: Java Persistence API Foundation</h4>
+                    </li>
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Process: Agile Way of Working Foundation</h4>
+                    </li>
+
+                </ol>
+
+                <br>
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <img class="d-icon-img" src="assets/images/icons8-certificate-50.png">
+                    </div>
+
+                    <h3 class="h3">Udemy</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">
+                            <a href="https://www.udemy.com/certificate/UC-f3c4f375-2115-403e-b644-35285a5f1552/"
+                               style="text-decoration: none; color: inherit;" target="_blank">
+                                Build Reactive MicroServices using Spring WebFlux/SpringBoot
+                            </a>
+                        </h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">
+                            <a href="https://www.udemy.com/certificate/UC-4d9d1a8f-de61-481d-aa7f-b6c53281768e/"
+                               style="text-decoration: none; color: inherit;" target="_blank">
+                                Deploy Spring Boot Microservices on AWS ECS with Fargate
+                            </a>
+                        </h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">
+                            <a href="https://www.udemy.com/certificate/UC-9ee256c0-206f-4ced-ab0c-6226807dedf4/"
+                               style="text-decoration: none; color: inherit;" target="_blank">
+                                AWS Serverless REST APIs for Java Developers. CI/CD included
+                            </a>
+                        </h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Introduction to Cloud Computing on AWS</h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Learn AWS Cloud from the Scratch</h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">The Ultimate Amazon Web Services Bootcamp</h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Spring Core - Learn Spring Framework 4 and Spring Boot</h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Amazon DynamoDB for Beginners: The Complete Bootcamp</h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">
+                            <a href="https://www.udemy.com/certificate/UC-5553baa8-f272-48b1-9741-625be6be0b67/"
+                               style="text-decoration: none; color: inherit;" target="_blank">
+                                Serverless Framework Bootcamp: Node.js, AWS & Microservices
+                            </a>
+                        </h4>
+
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Java Network Programming - Mastering TCP/IP : CJNP+ 2023
+                            JVA</h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Java Full Stack with Spring Boot and Angular</h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Free Code Camp Full Stack Development Certification</h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Full Stack Angular and Java Spring Boot</h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">
+                            <a href="https://www.udemy.com/certificate/UC-98559267-f2ec-44c1-afbe-b908aff9d32b/"
+                               style="text-decoration: none; color: inherit;" target="_blank">
+                                Learn to Build Interactive Modern Web Apps with Angular 17
+                            </a>
+                        </h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">
+                            <a href="#" style="text-decoration: none; color: inherit;" target="_blank">
+                                Develop a reactive Java microservice with ReactiveJ
+                            </a>
+                        </h4>
+                    </li>
+                </ol>
+
+                <br>
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <img class="d-icon-img" src="assets/images/icons8-certificate-50.png">
+                    </div>
+
+                    <h3 class="h3">LinkedIn Learning</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">
+                            <a href="https://github.com/dinesh-more/storage/blob/develop/certificate/CertificateOfCompletion_Docker%20Foundations%20Professional%20Certificate.pdf"
+                               style="text-decoration: none; color: inherit;" target="_blank">
+                                Career Essentials in GitHub Professional Certificate
+                            </a>
+                        </h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">
+                            <a href="https://github.com/dinesh-more/storage/blob/develop/certificate/CertificateOfCompletion_Docker%20Foundations%20Professional%20Certificate.pdf"
+                               style="text-decoration: none; color: inherit;" target="_blank">
+                                Docker Foundations Professional Certificate
+                            </a>
+                        </h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Microservices Foundations</h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Microservices: Design Patterns</h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Java EE: RESTful Service with JAX-RS 2.0</h4>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Designing RESTful APIs</h4>
+                    </li>
+
+                </ol>
+
+            </section>
+
+        </article>
+
+
+        <!--
+          - #PORTFOLIO
+        -->
+
+        <article class="portfolio" data-page="portfolio">
+
+            <header>
+                <h2 class="h2 article-title">Portfolio</h2>
+            </header>
+
+            <section class="projects">
+
+                <ul class="filter-list">
+
+                    <li class="filter-item">
+                        <button class="active" data-filter-btn>All</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Serverless</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Applications</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Web development</button>
+                    </li>
+
+                </ul>
+
+                <div class="filter-select-box">
+
+                    <button class="filter-select" data-select>
+
+                        <div class="select-value" data-selecct-value>Select category</div>
+
+                        <div class="select-icon">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </div>
+
+                    </button>
+
+                    <ul class="select-list">
+
+                        <li class="select-item">
+                            <button data-select-item>All</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Serverless</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Applications</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Web development</button>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="project-list">
+
+                    <li class="project-item  active" data-category="web development" data-filter-item>
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img alt="finance" loading="lazy" src="./assets/images/insurance-policy.jpg">
+                            </figure>
+
+                            <h3 class="project-title">Insurence Product</h3>
+
+                            <p class="project-category">Web development</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-category="serverless" data-filter-item>
+                        <a href="https://github.com/dinesh-more/aws-api-gateway-lambda-authorizer" target="_blank">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <img class="d-icon-img" src="assets/images/icons8-eye-24.png">
+                                </div>
+
+                                <img alt="fundo" loading="lazy" src="./assets/images/lambda-authorizer.png">
+                            </figure>
+
+                            <h3 class="project-title">Lambda Authorizer</h3>
+
+                            <p class="project-category">Serverless</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-category="serverless" data-filter-item>
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img alt="fundo" loading="lazy" src="./assets/images/shortURL.png">
+                            </figure>
+
+                            <h3 class="project-title">ShortURL Redirection</h3>
+
+                            <p class="project-category">Serverless</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-category="applications" data-filter-item>
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img alt="brawlhalla" loading="lazy" src="./assets/images/bitly-springboot-replica.png">
+                            </figure>
+
+                            <h3 class="project-title">Bitly Replica</h3>
+
+                            <p class="project-category">Applications</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-category="serverless" data-filter-item>
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img alt="dsm." loading="lazy" src="./assets/images/apigw-http-sqs-lambda-sls.png">
+                            </figure>
+
+                            <h3 class="project-title">AWS SQS Mechanism</h3>
+
+                            <p class="project-category">Serverless</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-category="serverless" data-filter-item>
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img alt="metaspark" loading="lazy" src="./assets/images/lambda-ses.png">
+                            </figure>
+
+                            <h3 class="project-title">Bulk Email Sender</h3>
+
+                            <p class="project-category">Serverless</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-category="applications" data-filter-item>
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img alt="task manager" loading="lazy" src="./assets/images/call-vault.png">
+                            </figure>
+
+                            <h3 class="project-title">CallRecord Manager</h3>
+
+                            <p class="project-category">Applications</p>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
+
+
+        <!--
+          - #BLOG
+        -->
+
+        <article class="blog" data-page="blog">
+
+            <header>
+                <h2 class="h2 article-title">Blog</h2>
+            </header>
+
+            <section class="blog-posts">
+
+                <ul class="blog-posts-list">
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img alt="Design conferences in 2022" loading="lazy" src="./assets/images/blog-1.jpg">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                                <p class="blog-text">
+                                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img alt="Best fonts every designer" loading="lazy" src="./assets/images/blog-2.jpg">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                                <p class="blog-text">
+                                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img alt="Design digest #80" loading="lazy" src="./assets/images/blog-3.jpg">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                                <p class="blog-text">
+                                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam
+                                    corporis suscipit.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img alt="UI interactions of the week" loading="lazy" src="./assets/images/blog-4.jpg">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                                <p class="blog-text">
+                                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco
+                                    laboris nisi.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img alt="The forgotten art of spacing" loading="lazy" src="./assets/images/blog-5.jpg">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                                <p class="blog-text">
+                                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img alt="Design digest #79" loading="lazy" src="./assets/images/blog-6.jpg">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                                <p class="blog-text">
+                                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
+
+
+        <!--
+          - #CONTACT
+        -->
+
+        <article class="contact" data-page="location">
+
+            <header>
+                <h2 class="h2 article-title">Location</h2>
+            </header>
+
+            <!-- <section class="mapbox" data-mapbox>
+              <figure>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1512094.503662009!2d73.71747457119665!3d18.52043031556061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf632c9c8cc7%3A0x1f3826b3c94c06d!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1631756005866!5m2!1sen!2sin"
+                width="400" height="300" loading="lazy"></iframe>
+              </figure>
+            </section> -->
+
+            <section class="mapbox" data-mapbox>
+                <!-- <figure>
+                    <div id="map" style="width: 100%; height: 400px;"></div>
+                </figure>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script> -->
+                <div id="map"></div>
+
+                <script>
+                    // Initialize the map
+                    var map = L.map('map').setView([18.59267, 73.73887], 13); // Coordinates for Hinjewadi, Pune
+
+                    // Add a tile layer (you can choose different providers)
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+
+                    // Add a marker for the location
+                    var marker = L.marker([18.59267, 73.73887]).addTo(map);
+
+                    // Add a popup to the marker
+                    marker.bindPopup("<b>Hinjewadi</b>, Pune, Maharashtra, India").openPopup();
+                </script>
+            </section>
+
+        </article>
 
     </div>
 
-  </main>
+</main>
 
 
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+<!--
+  - custom js link
+-->
+<script src="./assets/js/script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!--
+  - ionicon link
+-->
+<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    function calculateExperience(startDateStr) {
+      const startDate = new Date(startDateStr);
+      const currentDate = new Date();
+
+      let years = currentDate.getFullYear() - startDate.getFullYear();
+      let months = currentDate.getMonth() - startDate.getMonth();
+      let days = currentDate.getDate() - startDate.getDate();
+
+      if (days < 0) {
+        months--;
+        days += new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
+      }
+
+      if (months < 0) {
+        years--;
+        months += 12;
+      }
+
+      return `${years} years, ${months} months, ${days} days`;
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const experienceText = calculateExperience("2019-07-01"); // <-- Set your actual start date here
+      document.getElementById("experience-duration").textContent = experienceText;
+    });
+</script>
+
 
 </body>
 
